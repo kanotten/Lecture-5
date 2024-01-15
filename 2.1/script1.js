@@ -14,17 +14,49 @@
 
 // }, 1000); // function here is a anonymous function/ helper function
 
-const listContainer = document.querySelector(".container");
-let counter = 0;
+// const listContainer = document.querySelector(".container");
+// let counter = 0;
 
-const interValId = setInterval (function() {
-    counter++; // add one after each second- its each second because i added 1000 = 1 second as the set interval
-    listContainer.innerHTML +=  `<li> Kenji ${counter} </li>`;
+// const interValId = setInterval (function() {
+//     counter++; // add one after each second- its each second because i added 1000 = 1 second as the set interval
+//     listContainer.innerHTML +=  `<li> Kenji ${counter} </li>`;
 
-    if (counter ===5) {
-        clearInterval(interValId);
+//     if (counter ===5) {
+//         clearInterval(interValId);
+//     }
+
+// },1000);
+
+
+// tasks
+let user = {
+}
+
+user.name = "Jonas";
+user.surName = "The Great";
+user.name = "Helene";
+
+delete user.name
+console.log(user);
+
+
+
+
+
+
+function isEmpty(obj) { // a function will only reuturn one thing
+    for (let key in obj) {
+        if (obj.hasOwnProperty(key)) {
+            return false; // Object has at least one property
+        }
     }
+    return true; // Object has no properties
+}
 
-},1000);
+let emptyObject = {};
+let nonEmptyObject = { key: 'value' };
+
+console.log(isEmpty(emptyObject)); // Output: true
+console.log(isEmpty(nonEmptyObject)); // Output: false
 
 
