@@ -29,34 +29,54 @@
 
 
 // tasks
-let user = {
-}
+// let user = {
+// }
 
-user.name = "Jonas";
-user.surName = "The Great";
-user.name = "Helene";
+// user.name = "Jonas";
+// user.surName = "The Great";
+// user.name = "Helene";
 
-delete user.name
-console.log(user);
-
-
+// delete user.name
+// console.log(user);
 
 
 
 
-function isEmpty(obj) { // a function will only reuturn one thing
-    for (let key in obj) {
-        if (obj.hasOwnProperty(key)) {
-            return false; // Object has at least one property
-        }
-    }
-    return true; // Object has no properties
-}
 
-let emptyObject = {};
-let nonEmptyObject = { key: 'value' };
 
-console.log(isEmpty(emptyObject)); // Output: true
-console.log(isEmpty(nonEmptyObject)); // Output: false
+// function isEmpty(obj) { // a function will only reuturn one thing
+//     for (let key in obj) {
+//         if (obj.hasOwnProperty(key)) {
+//             return false; // Object has at least one property
+//         }
+//     }
+//     return true; // Object has no properties
+// }
 
+// let emptyObject = {};
+// let nonEmptyObject = { key: 'value' };
+
+// console.log(isEmpty(emptyObject)); // Output: true
+// console.log(isEmpty(nonEmptyObject)); // Output: false
+
+
+// let numbers = [1, 2, 31, 24, -67, 5, 3, 555, 79];
+
+
+
+// Given array of numbers
+let numbers = [1, 2, 31, 24, -67, 5, 3, 555, 79];
+
+// Find the maximum and minimum values
+let max = Math.max(...numbers);
+let min = Math.min(...numbers);
+
+// Filter positive and even numbers into a new array
+let positiveEvenNumbers = numbers.filter(num => num > 0 && num % 2 === 0);
+
+// Display the results on the screen
+console.log("Original array:", numbers);
+console.log("Maximum value:", max);
+console.log("Minimum value:", min);
+console.log("Positive and even numbers:", positiveEvenNumbers);
 
