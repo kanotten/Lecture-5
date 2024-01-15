@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
       if (timeLeft > 6) {
         counterContainer.innerHTML = timeLeft;
       } else {
-       
+
         counterContainer.innerHTML = `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ac egestas arcu, quis fringilla felis. Nullam at libero at justo tempor aliquet id at ante. Mauris sed congue metus, scelerisque venenatis massa. Etiam et euismod arcu, sit amet semper arcu. Mauris laoreet tortor ut neque scelerisque sodales. Sed mi sapien, fringilla et condimentum lacinia, blandit sit amet tellus. In lacus massa, ornare vel felis at, vestibulum tincidunt ipsum. Cras sit amet molestie orci. Maecenas efficitur, arcu tincidunt porttitor lacinia, lacus arcu finibus felis, in maximus tortor elit et tellus. Curabitur eu mauris justo. Donec consequat ac urna sed euismod.`;
       }
 
@@ -46,3 +46,10 @@ document.addEventListener("DOMContentLoaded", function () {
     updateCounter();
   }
 });
+
+// setTimout (function () {
+//     after.style.display =
+
+// },5000);
+
+
