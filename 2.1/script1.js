@@ -64,6 +64,8 @@ let numArray = [1, 2, 31, 24, -67, 5, 3, 555, 79];
 
 let.sortedNum = numArray.sort((a,b) => a - b);
 
+// log positiv and negativ numbers
+
 
 
 
